@@ -40,9 +40,6 @@ for person in people:
 print(first_dog_person, iteration_count)
 ```
 
-    {'name': 'Katie', 'age': 30, 'job': 'Teacher', 'pet': 'Dog', 'pet_name': 'Frank'} 2
-
-
 
 ```python
 # use a for loop to create a list of the cat owners who are under the age of 28
@@ -59,9 +56,6 @@ for person in people:
 print(cat_owners)
 ```
 
-    [{'name': 'Owen', 'age': 26, 'job': 'Sales person', 'pet': 'Cat', 'pet_name': 'Cosmo'}, {'name': 'Josh', 'age': 22, 'job': 'Student', 'pet': 'Cat', 'pet_name': 'Chat'}]
-
-
 
 ```python
 # use a for loop to find the first person who is above 29 years old in our list of people
@@ -73,17 +67,6 @@ for person in people:
         break
 thirty_something_yr_old
 ```
-
-
-
-
-    {'name': 'Katie',
-     'age': 30,
-     'job': 'Teacher',
-     'pet': 'Dog',
-     'pet_name': 'Frank'}
-
-
 
 
 ```python
@@ -100,9 +83,6 @@ for person in people:
 print(dog_owner_names, dog_names)
 ```
 
-    ['Katie', 'Estelle', 'Gustav'] ['Frank', 'Gabby', 'Helen']
-
-
 
 ```python
 # use a for loop to create a list of person names and another list of pet names for all cat owners this time
@@ -118,9 +98,6 @@ for person in people:
 print(cat_owner_names, cat_names)
 ```
 
-    ['Daniel', 'Owen', 'Josh'] ['Gato', 'Cosmo', 'Chat']
-
-
 
 ```python
 # use a for loop to create a list of odd numbers from the list of numbers from 0 to 100
@@ -135,9 +112,7 @@ for number in list_of_numbers:
     elif len(list_of_odd_numbers_plus_ten) > 34:
         break
     else:
-        list_of_odd_numbers_plus_ten.appen
-    
-        
+        list_of_odd_numbers_plus_ten.append(number + 10)
 ```
 
 ## Summary
