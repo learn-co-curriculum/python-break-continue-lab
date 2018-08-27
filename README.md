@@ -33,42 +33,93 @@ first_dog_person = None
 iteration_count = 0
 for person in people:
     iteration_count += 1
-    pass
+    if person['pet'] == "Dog":
+        first_dog_person = person
+        break
+
+print(first_dog_person, iteration_count)
 ```
+
+    {'name': 'Katie', 'age': 30, 'job': 'Teacher', 'pet': 'Dog', 'pet_name': 'Frank'} 2
+
 
 
 ```python
 # use a for loop to create a list of the cat owners who are under the age of 28
 # remember to use break and continue to make your code more efficient
-cat_owners = None
-# for loop goes here
+cat_owners = []
+for person in people:
+    if not person['pet'] == "Cat":
+        continue
+    elif not person['age'] <= 28:
+        continue
+    else:
+        cat_owners.append(person)
+        
+print(cat_owners)
 ```
+
+    [{'name': 'Owen', 'age': 26, 'job': 'Sales person', 'pet': 'Cat', 'pet_name': 'Cosmo'}, {'name': 'Josh', 'age': 22, 'job': 'Student', 'pet': 'Cat', 'pet_name': 'Chat'}]
+
 
 
 ```python
 # use a for loop to find the first person who is above 29 years old in our list of people
 # remember to use a break and or continue statement
 thirty_something_yr_old = None
-# for loop goes here
+for person in people:
+    if person['age'] >= 30:
+        thirty_something_yr_old = person
+        break
+thirty_something_yr_old
 ```
+
+
+
+
+    {'name': 'Katie',
+     'age': 30,
+     'job': 'Teacher',
+     'pet': 'Dog',
+     'pet_name': 'Frank'}
+
+
 
 
 ```python
 # use a for loop to create a list of person names and another list of pet names for all dog owners
 # remember to use break and or continue statements
-dog_owner_names = None
-dog_names = None
-# for loop goes here
+dog_owner_names = []
+dog_names = []
+for person in people:
+    if not person['pet'] == "Dog":
+        continue
+    else:
+        dog_owner_names.append(person['name'])        
+        dog_names.append(person['pet_name'])
+print(dog_owner_names, dog_names)
 ```
+
+    ['Katie', 'Estelle', 'Gustav'] ['Frank', 'Gabby', 'Helen']
+
 
 
 ```python
 # use a for loop to create a list of person names and another list of pet names for all cat owners this time
 # remember to use break and or continue statements
-cat_owner_names = None
-cat_names = None
-# for loop goes here
+cat_owner_names = []
+cat_names = []
+for person in people:
+    if not person['pet'] == "Cat":
+        continue
+    else:
+        cat_owner_names.append(person['name'])        
+        cat_names.append(person['pet_name'])
+print(cat_owner_names, cat_names)
 ```
+
+    ['Daniel', 'Owen', 'Josh'] ['Gato', 'Cosmo', 'Chat']
+
 
 
 ```python
@@ -79,7 +130,14 @@ cat_names = None
 list_of_numbers = list(range(0,100))
 list_of_odd_numbers_plus_ten = []
 for number in list_of_numbers:
-    pass
+    if number % 2 == 0:
+        continue
+    elif len(list_of_odd_numbers_plus_ten) > 34:
+        break
+    else:
+        list_of_odd_numbers_plus_ten.appen
+    
+        
 ```
 
 ## Summary
