@@ -1,0 +1,10 @@
+[
+  "test/test_index.py::test_find_first_dog_person",
+  "test/test_index.py::test_cat_owners",
+  "test/test_index.py::test_thirty_something_yr_old",
+  "test/test_index.py::test_dog_owner_names",
+  "test/test_index.py::test_dog_names",
+  "test/test_index.py::test_cat_owner_names",
+  "test/test_index.py::test_cat_names",
+  "test/test_index.py::test_list_of_odd_numbers_plus_ten"
+]

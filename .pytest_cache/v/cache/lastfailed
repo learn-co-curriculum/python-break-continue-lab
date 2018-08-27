@@ -1,0 +1,10 @@
+{
+  "test/test_index.py::test_cat_names": true,
+  "test/test_index.py::test_cat_owner_names": true,
+  "test/test_index.py::test_cat_owners": true,
+  "test/test_index.py::test_dog_names": true,
+  "test/test_index.py::test_dog_owner_names": true,
+  "test/test_index.py::test_find_first_dog_person": true,
+  "test/test_index.py::test_list_of_odd_numbers_plus_ten": true,
+  "test/test_index.py::test_thirty_something_yr_old": true
+}
