@@ -1,32 +1,87 @@
-# Object Orientation
 
-## Overview
+# Break and Continue Statements Lab
 
-We'll introduce the concept of Object Oriented Programming (OOP)
+## Introduction
+In this lab, we will practice using `break` and `continue` statements in our code. We will be iterating through collections and filtering out or selectively operating on elements by using these flow control statements.
 
-## Object-Oriented Programming (OOP)
+## Objectives
 
-*An object-oriented approach to application development makes programs more intuitive to design, faster to develop, more amenable to modification, and easier to understand.*  
-—[*Object-Oriented Programming with Objective-C*][apple_oop_guide_intro], Apple Inc.
+* Understand how to use `break` and `continue` statements
+* Identify when and where to use `break` and `continue` statements
 
-[apple_oop_guide_intro]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005149-CH1-SW2
+## Instructions
 
-It's natural to wonder, "how can a string of ones and zeroes be referred to as an 'object'?" The use of the word "object" is an abstraction of thought. An "object" in code has no more physical form than does a word in any human language. Sure, words have physical representations: speaking a word causes air to vibrate in a sound wave, ink on a page can be shaped into symbols that represent the word, a meaning can be pointed at or mimed out; but none of these are the word itself. Human language is a system of abstraction: it communicates the *idea* of a thing, but not the thing itself.
+We have a list of person objects with all kinds of attributes. We'll use loops to find a person that meets a certain requirement that we are looking for or create new lists with a certain subset of elements. Write for loops with conditional statements in conjunction with `break` and `continue` to get the desired output.
 
-![](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)  
-Translation: "This is not a pipe." - [*The Treachery of Images*](https://en.wikipedia.org/wiki/The_Treachery_of_Images), [René Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte), 1927  
 
-This image of a pipe is no more a pipe than the word "pipe" is a pipe; in the same way, a code object named `pipe` is not a pipe, but only another form of representing a pipe.
+```python
+people = [
+    {'name': "Daniel", 'age': 29, 'job': "Engineer", 'pet': "Cat", 'pet_name': "Gato"}, 
+    {'name': "Katie", 'age': 30, 'job': "Teacher", 'pet': "Dog", 'pet_name': "Frank"},
+    {'name': "Owen", 'age': 26, 'job': "Sales person", 'pet': "Cat", 'pet_name': "Cosmo"},
+    {'name': "Josh", 'age': 22, 'job': "Student", 'pet': "Cat", 'pet_name': "Chat"},
+    {'name': "Estelle", 'age': 35, 'job': "French Diplomat", 'pet': "Dog", 'pet_name': "Gabby"},
+    {'name': "Gustav", 'age': 24, 'job': "Brewer", 'pet': "Dog", 'pet_name': "Helen"}
+]
+```
 
->As humans, we’re constantly faced with myriad facts and impressions that we must make sense of. To do so, we must abstract underlying structure away from surface details and discover the fundamental relations at work. Abstractions reveal causes and effects, expose patterns and frameworks, and separate what’s important from what’s not. Object orientation provides an abstraction of the data on which you operate; moreover, it provides a concrete grouping between the data and the operations you can perform with the data—in effect giving the data behavior.  
->—[*Object-Oriented Programming with Objective-C*](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Articles/ooOOP.html#//apple_ref/doc/uid/TP40005149-CH8-SW3), Apple Inc.
 
-A code object representing a water pipe (instead of a smoking pipe) might contain values for `length`, `diameter`, `material`, and `manufacturer`. The bundling of these individual pieces of information together begins to form a larger whole.
+```python
+# use the for loop below to find the *first* person in the list of people that has a dog as their pet
+# the iteration count shouldn't exceed 2 iterations
+first_dog_person = None
+iteration_count = 0
+for person in people:
+    iteration_count += 1
+    pass
+```
 
-Object-Oriented Programming, however, does more than just bundle up individual pieces of data that represent a "thing" — it also bundles customized functions that can be performed *on* that data. These are called **methods**: behaviors that an object performs upon its internal data and even upon other code objects.
 
-An object in code is a thing with all the data and all the logic required to complete a task. Objects are models and metaphors for the problems we solve in code.
+```python
+# use a for loop to create a list of the cat owners who are under the age of 28
+# remember to use break and continue to make your code more efficient
+cat_owners = None
+# for loop goes here
+```
 
-Object-oriented programming was born from the trend of making digital lives reflect our real lives. In the 1970's, [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_%28computer_scientist%29) and [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay) developed an object-oriented language at Xerox PARC called SmallTalk, which was used in the first personal computer.
 
-Python comes with a few types of Objects to get us started, things like `int` for Integer, `str` for String, `list` for List, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the `class` keyword and object orientation allows us to do.
+```python
+# use a for loop to find the first person who is above 29 years old in our list of people
+# remember to use a break and or continue statement
+thirty_something_yr_old = None
+# for loop goes here
+```
+
+
+```python
+# use a for loop to create a list of person names and another list of pet names for all dog owners
+# remember to use break and or continue statements
+dog_owner_names = None
+dog_names = None
+# for loop goes here
+```
+
+
+```python
+# use a for loop to create a list of person names and another list of pet names for all cat owners this time
+# remember to use break and or continue statements
+cat_owner_names = None
+cat_names = None
+# for loop goes here
+```
+
+
+```python
+# use a for loop to create a list of odd numbers from the list of numbers from 0 to 100
+# each time there is an odd number, add 10 to it and append it to the list_of_odd_numbers_plus_ten
+# stop adding numbers to the list when there are 35 numbers
+# use break and continue statements in your code
+list_of_numbers = list(range(0,100))
+list_of_odd_numbers_plus_ten = []
+for number in list_of_numbers:
+    pass
+```
+
+## Summary
+
+In this lab, we practiced using flow control with `break` and `continue` to selectively operate on elements, append them to new lists, or assign them to new variables.
